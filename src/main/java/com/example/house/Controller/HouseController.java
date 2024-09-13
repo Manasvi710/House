@@ -39,32 +39,4 @@ public class HouseController {
     public double getavgbylocation(@PathVariable String location){
         return houseService.getAvgByLocation(location);
     }
-//
-//    @GetMapping("/avg-price")
-//    public ResponseEntity<ResponseDTO> getAveragePrice(){
-//        ResponseDTO response=houseService.getAverageSalePrice();
-//        return new ResponseEntity<>(response, response.getStatus());
-//    }
-//    @GetMapping("/location-price")
-//    public ResponseEntity<ResponseDTO> getLocationPrice(){
-//        ResponseDTO response=houseService.getAverageSalePriceperLocation();
-//        return new ResponseEntity<>(response, response.getStatus());
-//    }
-//
-//    @GetMapping("/max-price")
-//    public ResponseEntity<ResponseDTO> getMaxSalePrice(){
-//        ResponseDTO response=houseService.getMaxSalePrice();
-//        return new ResponseEntity<>(response, response.getStatus());
-//    }
-//    @GetMapping("/min-price")
-//    public ResponseEntity<ResponseDTO> getMinSalePrice(){
-//        ResponseDTO response=houseService.getMinSalePrice();
-//        return new ResponseEntity<>(response, response.getStatus());
-//    }
-//    @PostMapping("/save")
-//    public List<House> savePrice(@RequestBody List<House> houses){
-//        return houseService.save(houses);
-//    }
-
-
 }
